@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHDPAPER - The Instrument | Pitch Black Industries</title>
+<meta name="description" content="DNAGenomicsGPT v7.10. A forensic psychiatric genomics instrument built to be attacked in court, and therefore built to refuse. Method paper, Pitch Black Industries.">
+<meta property="og:title" content="PHDPAPER - The Instrument">
+<meta property="og:description" content="An evidentiary instrument designed around the assumption that its own output will be cross-examined.">
+<meta property="og:type" content="article">
+<style>
+:root{--paper:#FBF9F1;--ink:#0a0a0a;--soft:#8f8b83;--line:#232220;--accent:#4a5c6a}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{background:var(--ink);color:var(--paper);
+ font-family:"Helvetica Neue",Helvetica,"Neue Haas Grotesk Display",Arial,sans-serif;
+ font-weight:300;line-height:1.85;font-size:16px}
+.wrap{max-width:860px;margin:0 auto;padding:0 40px}
+section{padding:120px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:none}
+.eyebrow{font-size:10px;letter-spacing:.42em;text-transform:uppercase;color:var(--soft);margin-bottom:48px}
+h1{font-size:clamp(42px,8.4vw,96px);line-height:.95;letter-spacing:-.02em;text-transform:uppercase;font-weight:300}
+h2{font-size:clamp(24px,3.4vw,38px);line-height:1.18;letter-spacing:.02em;text-transform:uppercase;font-weight:300;margin-bottom:44px}
+h3{font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--soft);margin:64px 0 22px;font-weight:400}
+p{margin-bottom:26px;max-width:64ch}
+p.lead{font-size:21px;line-height:1.7}
+strong{font-weight:500;color:#fff}
+em{font-style:normal;color:var(--accent)}
+a{color:var(--paper);text-decoration:none;border-bottom:1px solid var(--line)}
+a:hover{border-bottom-color:var(--accent)}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:140px 0 100px;border-bottom:1px solid var(--line)}
+.hero .rule{width:64px;height:1px;background:var(--accent);margin:56px 0 40px}
+.hero .sub{font-size:11px;letter-spacing:.36em;text-transform:uppercase;color:var(--soft);max-width:54ch;line-height:2.4}
+.stat{display:grid;grid-template-columns:210px 1fr;gap:44px;padding:38px 0;border-top:1px solid var(--line);align-items:baseline}
+.stat__n{font-size:42px;line-height:1;letter-spacing:-.02em}
+.stat__n span{font-size:14px;letter-spacing:.2em;color:var(--soft);display:block;margin-top:12px}
+.stat__b{font-size:15px;line-height:1.8;color:#cfcac1;max-width:58ch}
+blockquote{margin:88px 0;padding-left:34px;border-left:1px solid var(--accent);
+ font-size:clamp(21px,2.9vw,31px);line-height:1.45;color:#fff;max-width:28ch;font-weight:300}
+.grid{border-top:1px solid var(--line);margin-top:56px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:30px 0;border-bottom:1px solid var(--line)}
+.row__k{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--soft)}
+.row__v{font-size:15px;line-height:1.75;color:#cfcac1}
+.tag{display:inline-block;font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--soft);
+ border:1px solid var(--line);padding:3px 9px;margin-left:10px;white-space:nowrap}
+.foot{padding:100px 0 140px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);line-height:2.6}
+@media(max-width:720px){.wrap{padding:0 24px}section{padding:80px 0}
+ .stat{grid-template-columns:1fr;gap:14px}.row{grid-template-columns:1fr;gap:10px}blockquote{margin:56px 0}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Pitch Black Industries · Phdpaper · Method</div>
+    <h1>The<br>Instrument</h1>
+    <div class="rule"></div>
+    <div class="sub">
+      DNAGenomicsGPT v7.10.<br>
+      Built on the assumption that its own output<br>
+      will be cross-examined.<br>
+      Therefore built to refuse.
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">01 · The problem it was built for</div>
+    <h2>A psychiatry shortage meets a courtroom</h2>
+
+    <p class="lead">A person in a psychiatric crisis enters the justice system. A defence
+    needs a forensic psychiatric assessment. There is a waiting list measured in months,
+    a shortage of qualified assessors, and a hearing date that does not move.</p>
+
+    <p>That gap is the entire reason this system exists. Not to replace the forensic
+    psychiatrist, which it cannot do and does not attempt. To produce the structured
+    evidentiary groundwork the psychiatrist would otherwise spend weeks assembling, so
+    that scarce expert time is spent on judgement rather than on compilation.</p>
+
+    <p>The intended readers were named at design time and the whole architecture follows
+    from them: psychiatric tribunals and courts, magistrates and public prosecutors,
+    emergency and medical personnel who need to know how to help someone quickly, mental
+    health professionals deciding where to focus, and forensic or defence legal teams
+    trying to understand a client.</p>
+
+    <p>Every one of those readers is either adversarial or operating under time pressure.
+    <strong>Design for that reader and you get a very different machine than the one you
+    get from designing for a curious consumer.</strong></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">02 · Scale</div>
+    <h2>What goes in</h2>
+
+    <div class="stat">
+      <div class="stat__n">600,000+<span>SNPs</span></div>
+      <div class="stat__b">Consolidated from multiple raw consumer-genomics sources.
+      One subject file measured 609,346 markers. CircleDNA exports arrive split across
+      roughly thirteen volumes totalling about a gigabyte.</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat__n">31M<span>points of exome data</span></div>
+      <div class="stat__b">Whole exome sequencing layered on top of the array data, giving
+      coverage the consumer panels alone cannot reach.</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat__n">50,000<span>words of instruction</span></div>
+      <div class="stat__b">The instrument itself: roughly 150 pages of triple-audited
+      specification, plus 105 sequential operator prompts that drive a single evaluation
+      from first contact to signed conclusion.</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat__n">200-400<span>pages out</span></div>
+      <div class="stat__b">Structured for forensic and clinical review rather than for
+      reading pleasure. Cover letter, contents, executive summary, then the domains, then
+      the full SNP trace table, then triage and legal summary.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">03 · The design principle</div>
+    <h2>Built to refuse</h2>
+
+    <p class="lead">Most systems in this category are built to produce an answer. This one
+    is built to decline to produce one, wherever the data does not support it.</p>
+
+    <p>That inversion is the whole contribution, and every constraint below exists because
+    a hostile cross-examination would otherwise find it.</p>
+
+    <div class="grid">
+      <div class="row">
+        <div class="row__k">No imputation</div>
+        <div class="row__v">If a variant was not genotyped in the subject's raw file it is
+        marked absent and excluded from scoring. It is never estimated from neighbouring
+        markers, never inferred, never quietly filled in.</div>
+      </div>
+      <div class="row">
+        <div class="row__k">Coordinate conversion is mandatory</div>
+        <div class="row__v">Some sources report rsIDs, some report chromosome and position
+        only. Position-only markers must be resolved to rsIDs against a reference map
+        before evaluation. Skip that step and you generate false negatives, and a report
+        with false negatives in it is inadmissible.</div>
+      </div>
+      <div class="row">
+        <div class="row__k">Traceability per volume</div>
+        <div class="row__v">Every result carries the source file it came from. A reviewer
+        can walk any single line of the report back to the raw byte it was derived from.</div>
+      </div>
+      <div class="row">
+        <div class="row__k">Coverage normalisation</div>
+        <div class="row__v">Consumer panels do not carry every psychiatric locus. Scores
+        are normalised against markers actually present, so partial coverage produces a
+        correctly weakened result rather than a falsely reassuring one.</div>
+      </div>
+      <div class="row">
+        <div class="row__k">Zygosity weighting</div>
+        <div class="row__v">Homozygous risk alleles carry double weight, heterozygous
+        single. Protective and neutral genotypes are struck through and removed from the
+        risk total rather than silently dropped.</div>
+      </div>
+      <div class="row">
+        <div class="row__k">Mandatory self-audit</div>
+        <div class="row__v">Every two to three blocks the system halts and requires the
+        operator to confirm that every marker shown was read from the subject's raw data
+        and that nothing was inferred. It will not continue without that signal.</div>
+      </div>
+    </div>
+
+    <blockquote>An instrument that cannot say "not enough data" is not an instrument. It is a generator.</blockquote>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">04 · Evidence base</div>
+    <h2>Where the numbers come from</h2>
+
+    <p>Nothing in the output originates with the system. Every marker used is drawn from
+    published, peer-reviewed association work, and the report names the source for each
+    one so that a reviewer can check it independently.</p>
+
+    <div class="grid">
+      <div class="row">
+        <div class="row__k">Primary association data</div>
+        <div class="row__v">Psychiatric Genomics Consortium, the GWAS Catalog, and the
+        primary genetics literature.</div>
+      </div>
+      <div class="row">
+        <div class="row__k">Variant annotation</div>
+        <div class="row__v">dbSNP for identity and context, ClinVar for clinical
+        significance, SNPedia for trait annotation.</div>
+      </div>
+      <div class="row">
+        <div class="row__k">Functional interpretation</div>
+        <div class="row__v">GTEx for expression in brain tissue, eQTL mapping, and
+        chromatin state from large-scale epigenome projects. A variant that does nothing
+        in neural tissue is reported as such.</div>
+      </div>
+      <div class="row">
+        <div class="row__k">Scale example</div>
+        <div class="row__v">Schizophrenia alone runs against a validated list in the low
+        hundreds of markers, each one checked, matched and reported individually rather
+        than collapsed into a single score.
+        <span class="tag">HIGH · list size moves with each GWAS release</span></div>
+      </div>
+    </div>
+
+    <p style="margin-top:56px">Polygenic risk is reported as a percentile against a
+    reference population and as a relative multiplier against baseline. It is never
+    reported as a diagnosis, because it is not one, and the report says so on its own
+    first page.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">05 · Limits</div>
+    <h2>What this instrument cannot do</h2>
+
+    <p><strong>It cannot diagnose.</strong> Polygenic liability is probabilistic. A high
+    percentile is a statement about a population, not about a person's condition, and
+    certainly not about their conduct.</p>
+
+    <p><strong>It cannot establish intent.</strong> No sequence of base pairs speaks to
+    what somebody meant to do. A report that is read as though it did would be a misuse
+    of it, and the cover letter exists to prevent exactly that reading.</p>
+
+    <p><strong>It cannot separate gene from environment.</strong> Expression depends on
+    circumstances the genome has no record of. Trauma, poverty, injury, and the ordinary
+    accidents of a life are not in the file.</p>
+
+    <p><strong>It cannot cover what was never measured.</strong> Consumer arrays sample
+    the genome, they do not read it. The coverage figure printed beside every domain is
+    there so nobody mistakes a partial panel for a complete one.</p>
+
+    <p><strong>It has not been externally validated.</strong> This is a method paper
+    describing an instrument in use, not a clinical validation study. That study has not
+    been run, and until it is, the honest status of this work is promising and unproven.
+    <span class="tag">Stated plainly rather than buried</span></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">06 · Provenance</div>
+    <h2>Where it sits</h2>
+
+    <p>DNAGenomicsGPT v7.10 was designed and built from scratch by Rio Ezra Kho, and
+    predates the research programme it now sits inside. It is the origin instrument of
+    the blackpaper line, which concerns suicide reduction, and it is the technical basis
+    of the accelerated postgraduate research proposal that line grew out of.</p>
+
+    <p>The full instruction set and the 105 operator prompts are held privately. They are
+    the working apparatus rather than the argument, they carry commercial value, and any
+    real evaluation contains a specific living person's psychiatric and genomic profile.
+    <em>Subject material is never published, in whole or in part, under any
+    circumstances.</em> Access to the method for research or clinical collaboration is
+    available on request under agreement.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">07</div>
+    <h2>The point</h2>
+
+    <p class="lead">Somebody in a cell tonight is being assessed by a system with no
+    waiting list, no notes, and no genome. The instrument does not fix that. It shortens
+    the part a machine can honestly shorten, and refuses the part it cannot.</p>
+
+    <blockquote>Complement the psychiatrist. Never replace them. Never pretend to.</blockquote>
+
+    <div class="foot" style="padding-top:80px">
+      Cognitive Intelligence Services Pty Ltd · ABN 42 689 181 208<br>
+      Sydney, New South Wales, Australia<br><br>
+      Companion to the <a href="https://blackpaper.black.industries/">blackpaper</a> on
+      suicide reduction, the <a href="https://whitepaper.black.industries/">whitepaper</a>
+      on neurodivergence, the <a href="https://greenpaper.black.industries/">greenpaper</a>
+      on poverty reduction, and the <a href="https://redpaper.black.industries/">redpaper</a>
+      on variance.<br><br>
+      Not legal, medical, or diagnostic advice.
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
